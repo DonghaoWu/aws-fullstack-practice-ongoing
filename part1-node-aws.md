@@ -326,31 +326,31 @@
 1. Add new routes. # ./src/controllers/v0/feed/routes/feed.router.ts
 
     ```ts
-        //@TODO
-        //Add an endpoint to GET a specific resource by Primary Key
+    //@TODO
+    //Add an endpoint to GET a specific resource by Primary Key
 
-        router.get('/:id', async (req: Request, res: Response) => {
-            const id = req.params.id;
-            const item = await FeedItem.findByPk(id);
-            res.send(item);
+    router.get('/:id', async (req: Request, res: Response) => {
+        const id = req.params.id;
+        const item = await FeedItem.findByPk(id);
+        res.send(item);
+    });
+
+    // update a specific resource
+
+    router.patch('/:id',
+        requireAuth,
+        async (req: Request, res: Response) => {
+            //@TODO try it yourself
+
+            const updatedItem = await FeedItem.update(req.body, {
+                where: {
+                    id: req.params.id
+                },
+                returning: true,
+            })
+
+            res.send(updatedItem[1][0].dataValues);
         });
-
-        // update a specific resource
-
-        router.patch('/:id',
-            requireAuth,
-            async (req: Request, res: Response) => {
-                //@TODO try it yourself
-
-                const updatedItem = await FeedItem.update(req.body, {
-                    where: {
-                        id: req.params.id
-                    },
-                    returning: true,
-                })
-
-                res.send(updatedItem[1][0].dataValues);
-            });
     ```
 
 2. Run the app
