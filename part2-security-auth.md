@@ -6,7 +6,8 @@
 
 ## `Section: Backend.`
 
-### `Summary`: In this documentation, we learn to encrypt and store password in database, also implement JWTs in Node.
+### `Summary`: 
+    - In this documentation, we learn to encrypt and store password in database, also implement JWTs in Node.
 
 ### `Check Dependencies & Tools:`
 
@@ -19,7 +20,6 @@
 
 #### `本章背景: `
 - 
-
 ------------------------------------------------------------
 
 ### <span id="2.0">`Brief Contents & codes position`</span>
