@@ -27,7 +27,7 @@
 - #### Click here: [BACK TO NAVIGASTION](https://github.com/DonghaoWu/WebDev-tools-demo/blob/master/README.md)
 
 - [2.1 Outline.](#2.1)
-- [2.2 Bcrypt password.](#2.2)
+- [2.2 Encrypt the password.](#2.2)
 - [2.3 Implement JWT.](#2.3)
 - [2.4 Deploying changes.](#2.4)
 
@@ -48,7 +48,7 @@
     4. Deploy the changes.
 
 
-### <span id="2.2">`Step2: Brypt methods.`</span>
+### <span id="2.2">`Step2: Encrypt the password.`</span>
 
 - #### Click here: [BACK TO CONTENT](#2.0)
 
