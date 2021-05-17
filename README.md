@@ -7,3 +7,5 @@
 3. part-3: deploy frontend application on aws.
 
 4. part-4: Microservices vs monolith.
+
+5. Docker.
