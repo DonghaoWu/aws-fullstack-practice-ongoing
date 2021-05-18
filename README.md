@@ -9,3 +9,5 @@
 4. part-4: Microservices vs monolith.
 
 5. Docker.
+
+6. 5/17 severless & lambda
