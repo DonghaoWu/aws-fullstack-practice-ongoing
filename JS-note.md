@@ -41,3 +41,79 @@ let myFunc = outer();
 myFunc();
 myFUnc();
 ```
+
+8. constructor function
+```js
+const Person = function(firstName, lastName){
+    this.firstName = firstName;
+    this.lastName = lastName;
+}
+
+Person.prototype.calAge = function(){
+    console.log('age');
+}
+
+const me = new Person('hello','world');
+
+console.log(me instanceof Person);
+console.log(me.__proto__);
+```
+
+9. class
+```js
+class Person{
+    constructor(firstName, lastName){
+        this.firstName = firstName;
+        this.lastName = lastName;
+    }
+
+    calcAge(){
+        console.log('hello');
+    }
+
+    get firstname(){
+        return this.firstName;
+    }
+}
+
+const me = new Person('hello','world');
+
+console.log(me.firstname)
+```
+
+10. static methods.
+
+- a function attatch to constructor, not inheritance
+- only used by constrctor
+- 
+```js
+Person.het = function(){
+    console.log('hey');
+}
+```
+
+11. inheritance
+
+```js
+const Student = function(fn,ln,course){
+    Person.call(this, fn,ln);
+    this.course = course;
+}
+
+Student.prototype = Object.create(Person.prototype);
+
+Student.prototype.introduce = function(){
+    console.log(this.fn);
+}
+```
+
+12. class inheritance
+
+```js
+class Student extends Person{
+    constructor(fn,ln,course){
+        super(fn, ln);
+        this.course = course;
+    }
+}
+```
